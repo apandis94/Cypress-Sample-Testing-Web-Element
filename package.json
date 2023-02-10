@@ -1,0 +1,27 @@
+{
+  "name": "cypress-sample-testing-web-element",
+  "version": "1.0.0",
+  "description": "Cypress Web Automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apandis94/Cypress-Sample-Testing-Web-Element.git"
+  },
+  "keywords": [
+    "init",
+    "json"
+  ],
+  "author": "apandi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apandis94/Cypress-Sample-Testing-Web-Element/issues"
+  },
+  "homepage": "https://github.com/apandis94/Cypress-Sample-Testing-Web-Element#readme",
+  "dependencies": {
+    "jsonschema": "^1.4.1",
+    "module": "^1.2.5"
+  }
+}
