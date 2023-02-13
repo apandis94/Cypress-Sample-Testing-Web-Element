@@ -4,7 +4,7 @@
   "description": "Cypress Web Automation",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "npx cypress run"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
   "dependencies": {
     "jsonschema": "^1.4.1",
     "module": "^1.2.5"
+  },
+  "devDependencies": {
+    "cypress": "^12.5.1"
   }
 }
