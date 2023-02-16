@@ -5,6 +5,8 @@ let keterangan = "Barang yang di input adalah barang yang sudah di cek";
 class loginPage {
   elementsstep = {
     goback: () => cy.go("back"),
+
+    verifyelementaddcategory: () => cy.get("#root > div > div > div.css-1r35f0l > div.chakra-container.css-9rmdie > div.css-1t33j5j > table"),
   };
 
   elementslogin = {
@@ -89,6 +91,14 @@ class loginPage {
     this.elementscategory.inputdeskripsi().type(keterangan).wait(1000);
 
     this.elementscategory.btnSimpan().contains("simpan").click().wait(2000);
+  }
+
+  verify() {
+    this.elementsstep.verifyelementaddcategory().contains("celana").wait(2000);
+
+    this.elementsstep.verifyelementaddcategory().contains("ABC").wait(2000);
+
+    this.elementsstep.verifyelementaddcategory().contains("BCD").wait(2000);
   }
 }
 
