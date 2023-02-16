@@ -1,4 +1,4 @@
-describe("My First Test", () => {
+describe("Simulation Budget on BCA Finance", () => {
   let HargaKendaraan = ["50000000", "45000000", "35000000"];
   let UangMuka = ["30", "45", "25"];
   let input = 1;

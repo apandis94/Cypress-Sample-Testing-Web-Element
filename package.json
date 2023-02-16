@@ -4,7 +4,8 @@
   "description": "Cypress Web Automation",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run"
+    "test": "npx cypress open",
+    "html-reporter": "npx cypress run --spec 'cypress/e2e/Task_Sanber/all.js' --browser chrome --headed"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,9 @@
     "module": "^1.2.5"
   },
   "devDependencies": {
-    "cypress": "^12.5.1"
+    "concurrently": "^7.6.0",
+    "cypress": "^10.0.0",
+    "cypress-mochawesome-reporter": "^3.3.0",
+    "cypress-xpath": "^2.0.1"
   }
 }
