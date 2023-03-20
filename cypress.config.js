@@ -14,5 +14,7 @@ module.exports = defineConfig({
     specPattern: "cypress/e2e",
     supportFile: false,
     pageLoadTimeout: 75000,
+    experimentalSessionAndOrigin: true,
+    testIsolation: "off",
   },
 });
