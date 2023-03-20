@@ -73,7 +73,7 @@ class loginPage {
 
     this.elementslogin.loginBtn().contains("login").should("be.visible");
 
-    this.elementslogin.loginBtn().click().wait(2000).url().should("eq", "https://kasirdemo.belajarqa.com/dashboard").wait(2000);
+    this.elementslogin.loginBtn().click().wait(2000).url().should("eq", "http://kasirdemo.belajarqa.com/dashboard").wait(2000);
 
     this.elementslogin.profile().contains("Kelontong Murah").wait(2000);
   }

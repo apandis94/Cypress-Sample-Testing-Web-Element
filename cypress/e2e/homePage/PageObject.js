@@ -52,13 +52,13 @@ class loginPage {
 
     this.elementslogin.loginBtn().contains("login").should("be.visible");
 
-    this.elementslogin.loginBtn().click().wait(2000).url().should("eq", "https://kasirdemo.belajarqa.com/dashboard").wait(2000);
+    this.elementslogin.loginBtn().click().wait(2000).url().should("eq", "http://kasirdemo.belajarqa.com/dashboard").wait(2000);
 
     this.elementslogin.profile().contains("Kelontong Murah").wait(2000);
   }
 
   categoriesnoninput() {
-    this.elementscategory.btnCategory().contains("kategori").click().wait(3000).url().should("eq", "https://kasirdemo.belajarqa.com/categories");
+    this.elementscategory.btnCategory().contains("kategori").click().wait(3000).url().should("eq", "http://kasirdemo.belajarqa.com/categories");
 
     this.elementscategory.textCategories().contains("kategori");
 
@@ -78,7 +78,7 @@ class loginPage {
   }
 
   categories() {
-    this.elementscategory.btnCategory().contains("kategori").click().wait(3000).url().should("eq", "https://kasirdemo.belajarqa.com/categories");
+    this.elementscategory.btnCategory().contains("kategori").click().wait(3000).url().should("eq", "http://kasirdemo.belajarqa.com/categories");
 
     this.elementscategory.textCategories().contains("kategori");
 
