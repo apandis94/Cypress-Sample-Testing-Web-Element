@@ -1,3 +1,5 @@
+require('cypress-xpath');
+
 const baseUrl = "kasirdemo.belajarqa.com";
 
 let email = "kelontong.murah@gmail.com";
@@ -24,6 +26,10 @@ class loginPage {
     notifnoninputemail: () => cy.get("#root > div > div > div > div.css-1w7v3tn > div > div.chakra-alert.css-qwanz3"),
 
     elementverifyopenweb: () => cy.get("#root > div > div > div > div.css-104g6p0 > h2"),
+
+    elementprofile: () => cy.xpath('//*[@class="chakra-menu__menu-button css-kya9f7"]'),
+
+    elementlogout: () => cy.xpath('//*[@class="chakra-menu__menuitem css-vuzh5r"][3]')
   };
 
   loginnoninputemail() {
@@ -76,6 +82,13 @@ class loginPage {
     this.elementslogin.loginBtn().click().wait(2000).url().should("eq", "http://kasirdemo.belajarqa.com/dashboard").wait(2000);
 
     this.elementslogin.profile().contains("Kelontong Murah").wait(2000);
+
+    this.elementslogin.elementprofile().click().wait(1000);
+
+    this.elementslogin.elementlogout().contains('logout').trigger("click").wait(2000);
+
+    this.elementslogin.elementverifyopenweb().contains("hai, kasirAja").wait(3000);
+
   }
 }
 

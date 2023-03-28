@@ -1,4 +1,5 @@
 import PageLogin from "../homePage/Pagelogin";
+require('cypress-xpath');
 
 describe("Login Simulation on ", () => {
   cy.on("uncaught:exception", (err, runnable) => {
@@ -25,4 +26,5 @@ describe("Login Simulation on ", () => {
   it("Visit & Simulation Login Berhasil", () => {
     PageLogin.login();
   });
+  
 });
