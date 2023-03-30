@@ -15,7 +15,7 @@ describe("Add Category", () => {
   //login user
   it("login", () => {
     // call page object
-    PageLogin.login();
+    PageLogin.loginnonlogout();
   });
 
   //negative test tambah categori non input nama
